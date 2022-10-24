@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bảo hành Midea</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.midea.com/.resources/mideaTemplateModule/webresources/images/favicon.ico" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+</head>
+<body>
+<header>
+    <section class="mi-top-support">
+        <div class="container mi-top-support-content">
+            <div class="pull-left">
+                <a class="mi-micon" href="tel:1900588863"><i class="fa fa-phone"></i>1800 588 863</a>
+                <a class="mi-micon" href="mailto:customer.care@midea.com"><i class="fa fa-envelope"></i>customer.care@midea.com</a>
+            </div>
+            <div class="pull-right">
+                <a class="mi-btn-login" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> Đăng nhập</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <section class="mi-top-menu">
+        <div class="container mi-top-menu-content">
+            <nav class="navbar navbar-expand-md">
+                <a href="index.html" class="mi-logo navbar-brand" title="Midea"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link">Kích hoạt bảo hành</a>
+                        <a href="tra-cuu-bh.html" class="nav-item nav-link">Tra cứu bảo hành</a>
+                        <a href="dia-diem-bh.html" class="nav-item nav-link active">Địa điểm bảo hành</a>
+                        <a href="chinh-sach-bh.html" class="nav-item nav-link">Chính sách bảo hành</a>
+                        <a href="huong-dan-bh.html" class="nav-item nav-link nav-last">Hướng dẫn bảo hành</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+</header>
+<section class="mi-page-content">
+    <div class="mi-address-list">
+        <div class="container">
+            <div class="mi-title">Danh sách địa điểm bảo hành</div>
+            <div class="table-responsive mi-table-content">
+                <table class="table mi-table" id="midea_address">
+                    <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên trạm</th>
+                        <th>Địa chỉ</th>
+                        <th>Điện thoại</th>
+                        <th>Tỉnh thành</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Huyền Lương</td>
+                        <td>Số 472 đường Xương Giang , phường Ngô Quyền, TP Bắc Giang</td>
+                        <td>(0204) 3824714</td>
+                        <td>Bắc Giang</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Hoàng Huân</td>
+                        <td>Số 24A ,24B Nguyễn văn thoát , Phùng Chí Kiên, Tỉnh Bắc Cạn</td>
+                        <td>(0209) 3870299</td>
+                        <td>Bắc Kạn</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Lương Công Hoan</td>
+                        <td>6 Nguyễn Trãi , Ninh Xá , Bắc Ninh</td>
+                        <td>(0222).3826267</td>
+                        <td>Bắc Ninh</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Chiến Khu</td>
+                        <td>Số 4 tổ 12, phường Hợp Giang, Cao Bằng</td>
+                        <td>(0206) 3853066</td>
+                        <td>Cao Bằng</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Thanh Tùng</td>
+                        <td>47 Tổ 8, Phường Tân Thanh, TP Điện Biên</td>
+                        <td>(0215)3835789</td>
+                        <td>Điện Biên</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Đại Đức</td>
+                        <td>02 Hồng Quân tổ 13 Phường Nguyễn Trãi , TP Hà Giang</td>
+                        <td>(0219)2211474</td>
+                        <td>Hà Giang</td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>Tấn Lộc</td>
+                        <td>số 264 Lê Lợi , Phủ Lý , TP Hà Nam</td>
+                        <td>(0226) 2241334</td>
+                        <td>Hà Nam</td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>An Phát</td>
+                        <td>Số 1A38 , Đường Tây Mỗ , Quận Nam Từ Liêm , Hà Nội</td>
+                        <td>(024)62969141</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>Quang Hiển</td>
+                        <td>Số 109/170 Hồng Mai , Bạch Mai,HN</td>
+                        <td>(024)37261569</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>Thái Hà</td>
+                        <td>Số 3 Cao Bá Quát , Ba Đình , Hà Nội</td>
+                        <td>(024)37475368</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td>Ngọc Anh</td>
+                        <td>36 Ngô Thì NHậm , Quận Hà Đông , Hà Nội</td>
+                        <td>(024) 33703969</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <td>Thịnh Phát</td>
+                        <td>Số 303 hà hay tập , Yên Viên , Gia Lâm , Hà Nội</td>
+                        <td>(024)36961253</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>13</th>
+                        <td>Hoàng Thiên</td>
+                        <td>Số 118 Phố Tía , Thường Tín , HN</td>
+                        <td>(024) 66602668</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>14</th>
+                        <td>Bình Minh</td>
+                        <td>Kho H2,Cảng Hà Nội . Thanh Lương ,Hà Nội</td>
+                        <td>024-3932 9298</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>15</th>
+                        <td>Việt Tuấn</td>
+                        <td>Số 140 Phú Viên , Bồ Đề , Long Biên ,HN</td>
+                        <td>2438728357</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>16</th>
+                        <td>Hà Yên</td>
+                        <td>số 1 ngõ 185 phố Đặng Tiến Đông , Đông Đa</td>
+                        <td>(024) 22413329</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>17</th>
+                        <td>Lê Xuyên</td>
+                        <td>Sô 63 Đường Tam Giang, Trần Hưng Đạo, Hải Dương</td>
+                        <td>(0220) 3855232</td>
+                        <td>Hải Dương</td>
+                    </tr>
+                    <tr>
+                        <th>18</th>
+                        <td>Minh Đạt</td>
+                        <td>Thôn Vĩnh Khê , An đồng , An Dương , TP Hải Phòng</td>
+                        <td>( 0225) 6283350</td>
+                        <td>Hải Phòng</td>
+                    </tr>
+                    <tr>
+                        <th>19</th>
+                        <td>Bách Việt</td>
+                        <td>Số 575 Nguyễn Bỉnh Khiêm , tp Hải Phòng</td>
+                        <td>( 0225) 2641629</td>
+                        <td>Hải Phòng</td>
+                    </tr>
+                    <tr>
+                        <th>20</th>
+                        <td>Thành Tâm</td>
+                        <td>Số 109,Tổ 11, Đường Trần Hưng Đạo , Đồng Tiến , Hòa Bình</td>
+                        <td>(0218) 3851681</td>
+                        <td>Hòa Bình</td>
+                    </tr>
+                    <tr>
+                        <th>21</th>
+                        <td>Đức Toàn</td>
+                        <td>233 Điện Biên , TP Hưng Yên , Tỉnh Hưng Yên</td>
+                        <td>(0221) 3864467</td>
+                        <td>Hưng Yên</td>
+                    </tr>
+                    <tr>
+                        <th>22</th>
+                        <td>Kiên Hào</td>
+                        <td>450 Đường TRần Hưng Đạo , Lai Châu</td>
+                        <td>(0213) 6518518</td>
+                        <td>Lai Châu</td>
+                    </tr>
+                    <tr>
+                        <th>23</th>
+                        <td>Minh Trang</td>
+                        <td>Số 378 Đường Bắc Sơn , tp Lạng Sơn</td>
+                        <td>(0205) 3874587</td>
+                        <td>Lạng Sơn</td>
+                    </tr>
+                    <tr>
+                        <th>24</th>
+                        <td>Hoàng Giang</td>
+                        <td>Sô 54 Nguyễn Khuyến , tp Lào Cai</td>
+                        <td>(0214)3824766</td>
+                        <td>Lào Cai</td>
+                    </tr>
+                    <tr>
+                        <th>25</th>
+                        <td>Thanh Đạt</td>
+                        <td>Số 114 Nguyễn Bính , Nam Định</td>
+                        <td>(0228) 3848824</td>
+                        <td>Nam Định</td>
+                    </tr>
+                    <tr>
+                        <th>26</th>
+                        <td>Đức Vinh</td>
+                        <td>7 Ngõ A2 đường Hermann , TP Vinh Nghệ An</td>
+                        <td>(0238) 3830034</td>
+                        <td>Nghệ An</td>
+                    </tr>
+                    <tr>
+                        <th>27</th>
+                        <td>Phú Mỹ Linh</td>
+                        <td>SN668, đường 30/6, Phố Vân Giang, Phường Ninh Phong, Ninh Bình</td>
+                        <td>(0229) 3875340</td>
+                        <td>Ninh Bình</td>
+                    </tr>
+                    <tr>
+                        <th>28</th>
+                        <td>Tăng Tự</td>
+                        <td>1827 Đại Lộ Hùng Vương , TP Việt Trì</td>
+                        <td>(0210)3847041</td>
+                        <td>Phú Thọ</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>Đức Duy Phát</td>
+                        <td>Số 199 Nguyễn Bình , Đông Triều , Quảng Ninh</td>
+                        <td>02033.66.16.88</td>
+                        <td>Quảng Ninh</td>
+                    </tr>
+                    <tr>
+                        <th>30</th>
+                        <td>Trung Đức</td>
+                        <td>Số 12 ngách 19 ngõ 503 Lê Thanh Nghị, Cẩm Thạch, Cẩm Phả, Quảng Ninh</td>
+                        <td>(0203) 3860418</td>
+                        <td>Quảng Ninh</td>
+                    </tr>
+                    <tr>
+                        <th>31</th>
+                        <td>Hảo Khuyên</td>
+                        <td>Tổ 1, Khu 1 ,Phường Hồng Hà , Hạ Long , QN</td>
+                        <td>936275228</td>
+                        <td>Quảng Ninh</td>
+                    </tr>
+                    <tr>
+                        <th>32</th>
+                        <td>Thái Hùng</td>
+                        <td>255 đường Chu Văn Thịnh , TP Sơn La</td>
+                        <td>984236464</td>
+                        <td>Sơn La</td>
+                    </tr>
+                    <tr>
+                        <th>33</th>
+                        <td>Xuân Tùng</td>
+                        <td>31 Phạm Hồng Thái, TP Sơn Tây, Sơn Tây</td>
+                        <td>(024)33833392</td>
+                        <td>Sơn Tây</td>
+                    </tr>
+                    <tr>
+                        <th>34</th>
+                        <td>Rĩnh Long</td>
+                        <td>15B Nguyễn Tông Quai , TP .THái Bình</td>
+                        <td>(0227) 3844339</td>
+                        <td>Thái Bình</td>
+                    </tr>
+                    <tr>
+                        <th>35</th>
+                        <td>Sao Việt</td>
+                        <td>68A, tổ 4, đường CMT8 , TH Thái Nguyên</td>
+                        <td>(0208)3754445</td>
+                        <td>Thái Nguyên</td>
+                    </tr>
+                    <tr>
+                        <th>36</th>
+                        <td>Thành Tuyên</td>
+                        <td>Tổ 16 Phường Phan Thiết , TX Tuyên Quang</td>
+                        <td>(0207) 3812388</td>
+                        <td>Tuyên Quang</td>
+                    </tr>
+                    <tr>
+                        <th>37</th>
+                        <td>Cường Thịnh</td>
+                        <td>Số 232, tổ 1, đường Phạm Văn Đồng, P.Hưng Thành, TP Tuyên Quang</td>
+                        <td>( 0207) 3823 350</td>
+                        <td>Tuyên Quang</td>
+                    </tr>
+                    <tr>
+                        <th>38</th>
+                        <td>Ngọc Việt</td>
+                        <td>Số 39 Ngô Gia Tự , Liên Bảo , Vĩnh Yên , Vĩnh Phúc</td>
+                        <td>(0211)3847670</td>
+                        <td>Vĩnh Phúc</td>
+                    </tr>
+                    <tr>
+                        <th>39</th>
+                        <td>Mạnh Sử</td>
+                        <td>52 đường trần hưng đạo , Hồng Hà ,TP Yên Bái</td>
+                        <td>(0216) 3814113</td>
+                        <td>Yên Bái</td>
+                    </tr>
+                    <tr>
+                        <th>40</th>
+                        <td>Tràng An</td>
+                        <td>Số 98 đường Sông Sét, Hoàng Mai, HN</td>
+                        <td>989558698</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>41</th>
+                        <td>Đức Vinh</td>
+                        <td>7 Ngõ A2 đường Herman, Khối Yên Vinh, P. Hưng Phúc, TP Vinh</td>
+                        <td>2583563375</td>
+                        <td>Nghệ An</td>
+                    </tr>
+                    <tr>
+                        <th>42</th>
+                        <td>Mạnh Tuấn</td>
+                        <td>258 đường Trường Thi , P Trường Thi, TP Thanh Hóa</td>
+                        <td>2373855866</td>
+                        <td>Thanh Hóa</td>
+                    </tr>
+                    <tr>
+                        <th>43</th>
+                        <td>Ngọc Quang</td>
+                        <td>40 Hạc Thành, P Tân Sơn,TP Thanh Hóa</td>
+                        <td>2373853782</td>
+                        <td>Thanh Hóa</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>Thảo Phát</td>
+                        <td>107 Nguyễn Huệ B, P Mỹ Long, TP Long Xuyên, An Giang</td>
+                        <td>2963841984</td>
+                        <td>An Giang</td>
+                    </tr>
+                    <tr>
+                        <th>45</th>
+                        <td>Tài Phong</td>
+                        <td>4,6,8,10,12 Hai Bà Trưng ,P.Mỹ Long ,Long Xuyên ,Tỉnh An Giang</td>
+                        <td>2963841166</td>
+                        <td>An Giang</td>
+                    </tr>
+                    <tr>
+                        <th>46</th>
+                        <td>Út Dưỡng</td>
+                        <td>98B Xô Viết Nghệ Tĩnh, PThắng Tam, TP Vũng Tàu, Tỉnh BRVT.</td>
+                        <td>2543834224</td>
+                        <td>Bà Rịa Vũng Tàu</td>
+                    </tr>
+                    <tr>
+                        <th>47</th>
+                        <td>Phong Cường</td>
+                        <td>156 Bình Giã, Phường 8, TP Vũng Tàu, Tỉnh BRVT</td>
+                        <td>2543525753</td>
+                        <td>Bà Rịa Vũng Tàu</td>
+                    </tr>
+                    <tr>
+                        <th>48</th>
+                        <td>Minh Thái</td>
+                        <td>34/4 Trần Phú, P.7, khóm 3, Tp.Bạc Liêu</td>
+                        <td>2913980080</td>
+                        <td>Bạc Liêu</td>
+                    </tr>
+                    <tr>
+                        <th>49</th>
+                        <td>Tín Phong</td>
+                        <td>52B Đại lộ Đồng Khởi, P. Phú Khương ,TP. Bến Tre</td>
+                        <td>2753737999</td>
+                        <td>Bến Tre</td>
+                    </tr>
+                    <tr>
+                        <th>50</th>
+                        <td>Minh Bảo Hành</td>
+                        <td>903 Cách Mạng Tháng Tám, P Chánh Nghĩa, TX TDM,Bình Dương</td>
+                        <td>1900272717</td>
+                        <td>Bình Dương</td>
+                    </tr>
+                    <tr>
+                        <th>51</th>
+                        <td>Điện Lạnh Bình Phước</td>
+                        <td>47 Điểu Ông, P Tân Bình, TX Đồng Xoài, Bình Phước</td>
+                        <td>2713557788</td>
+                        <td>Bình Phước</td>
+                    </tr>
+                    <tr>
+                        <th>52</th>
+                        <td>Dịch Vụ Bình Phước</td>
+                        <td>46,47 KP2, P Phước Bình, TX Phước Long, Bình Phước.</td>
+                        <td>2713775555</td>
+                        <td>Bình Phước</td>
+                    </tr>
+                    <tr>
+                        <th>53</th>
+                        <td>Thanh Ngân</td>
+                        <td>338 Nguyễn Huệ, TX Bình Long , Bình Phước</td>
+                        <td>2713680456</td>
+                        <td>Bình Phước</td>
+                    </tr>
+                    <tr>
+                        <th>54</th>
+                        <td>Điện Tử Thuận</td>
+                        <td>50 Nguyễn Hội, P Phú Trinh, TP Phan Thiết, Bình Thuận</td>
+                        <td>2523828530</td>
+                        <td>Bình Thuận</td>
+                    </tr>
+                    <tr>
+                        <th>55</th>
+                        <td>Dũng Điện Tử</td>
+                        <td>195 Nguyễn Ngọc Kỳ, KP3, P.Phước Hội,TX La Gi, Bình Thuận</td>
+                        <td>2523844672</td>
+                        <td>Bình Thuận</td>
+                    </tr>
+                    <tr>
+                        <th>56</th>
+                        <td>Sài Gòn</td>
+                        <td>233 Tôn Đức Thắng, Khóm 8, Phường 5, TP. Cà Mau</td>
+                        <td>2903811189</td>
+                        <td>Cà Mau</td>
+                    </tr>
+                    <tr>
+                        <th>57</th>
+                        <td>Điện Lạnh Sài Gòn</td>
+                        <td>66,68 Phạm Công Trứ, P Cái Khế, Q Ninh Kiều, Cần Thơ</td>
+                        <td>2923896897</td>
+                        <td>Cần Thơ</td>
+                    </tr>
+                    <tr>
+                        <th>58</th>
+                        <td>Thiên Kim</td>
+                        <td>71/7F Trần Phú, P. Cái Khế, Q. Ninh Kiều, TP Cần Thơ</td>
+                        <td>2923828868</td>
+                        <td>Cần Thơ</td>
+                    </tr>
+                    <tr>
+                        <th>59</th>
+                        <td>Thanh Hoài</td>
+                        <td>826. Tổ 16, Khu 5, Ấp 2, xã An Hoà, Biên Hòa</td>
+                        <td>2513835395</td>
+                        <td>Đồng Nai</td>
+                    </tr>
+                    <tr>
+                        <th>60</th>
+                        <td>Thanh Cảnh</td>
+                        <td>132 Hoàng Diệu, KP2 , Phường Xuân Thanh , Thị xã Long khánh , Đồng Nai.</td>
+                        <td>2513870331</td>
+                        <td>Đồng Nai</td>
+                    </tr>
+                    <tr>
+                        <th>61</th>
+                        <td>Nghĩa Hiếu Phát</td>
+                        <td>613 Nguyễn Ái Quốc , KP2 , P.Hố Nai , Biên Hòa , Đồng Nai</td>
+                        <td>2513887413</td>
+                        <td>Đồng Nai</td>
+                    </tr>
+                    <tr>
+                        <th>62</th>
+                        <td>Thanh Phước</td>
+                        <td>91 Lê Quí Đôn ,Phường 1 ,Thành phố Cao Lãnh ,Tỉnh Đồng Tháp</td>
+                        <td>2773851575</td>
+                        <td>Đồng Tháp</td>
+                    </tr>
+                    <tr>
+                        <th>63</th>
+                        <td>Điện Lạnh Giang</td>
+                        <td>125 Nguyễn Huệ, Phường An Thạnh, Thị Xã Hồng Ngự, Tỉnh Đồng Tháp</td>
+                        <td>2773836837</td>
+                        <td>Đồng Tháp</td>
+                    </tr>
+                    <tr>
+                        <th>64</th>
+                        <td>ĐL Thuận</td>
+                        <td>15 Trần Hưng Đạo, K2, P2, TP. Sa đéc, tỉnh Đồng Tháp</td>
+                        <td>2773865418</td>
+                        <td>Đồng Tháp</td>
+                    </tr>
+                    <tr>
+                        <th>65</th>
+                        <td>Văn Vũ</td>
+                        <td>265 Hùng Vương, P2, Cao Lảnh, Đồng Tháp</td>
+                        <td>2773873359</td>
+                        <td>Đồng Tháp</td>
+                    </tr>
+                    <tr>
+                        <th>66</th>
+                        <td>Điện Lạnh Sài Gòn</td>
+                        <td>55 Hùng Vương, P5, TP Vị Thanh, Hậu Giang</td>
+                        <td>2933896897</td>
+                        <td>Hậu Giang</td>
+                    </tr>
+                    <tr>
+                        <th>67</th>
+                        <td>Phong Phú</td>
+                        <td>91 Phan Văn Trị, P14, Bình Thạnh, Thành phố Hồ Chí Minh
+                            193 Phan Văn Trị, P14, Bình Thạnh, HCM</td>
+                        <td>2822131008</td>
+                        <td>Hồ Chí Minh</td>
+                    </tr>
+                    <tr>
+                        <th>68</th>
+                        <td>Võ Văn Minh</td>
+                        <td>373 Nguyễn Thượng Hiền, Phường 11 Quận 10,Thành phố Hồ Chí Minh</td>
+                        <td>2822429600</td>
+                        <td>Hồ Chí Minh</td>
+                    </tr>
+                    <tr>
+                        <th>69</th>
+                        <td>Nguyên Hùng</td>
+                        <td>40/3/2 Phú Định, P16, Q8, HCM</td>
+                        <td>02839807136
+                            02822422822</td>
+                        <td>Hồ Chí Minh</td>
+                    </tr>
+                    <tr>
+                        <th>70</th>
+                        <td>Phan Dũng</td>
+                        <td>1210 Quang Trung, Phường 8, Quận Gò Vấp, Thành phố Hồ Chí Minh</td>
+                        <td>2862955839</td>
+                        <td>Hồ Chí Minh</td>
+                    </tr>
+                    <tr>
+                        <th>71</th>
+                        <td>Thiên Hiệp</td>
+                        <td>699 Tỉnh lộ 10, Bình Trị Đông B, Bình Tân</td>
+                        <td>2866534586</td>
+                        <td>Hồ Chí Minh</td>
+                    </tr>
+                    <tr>
+                        <th>72</th>
+                        <td>Hai Khôi</td>
+                        <td>801 Nguyễn Trung Trực, P Vĩnh Lạc, TP Rạch Giá, Kiên Giang</td>
+                        <td>2973926233</td>
+                        <td>Kiên Giang</td>
+                    </tr>
+                    <tr>
+                        <th>73</th>
+                        <td>Hai Khôi-Phú Quốc</td>
+                        <td>Tổ 4, ấp Suối Đá, xã Dương Tơ, huyện Phú Quốc, tỉnh Kiên Giang</td>
+                        <td>2973989115</td>
+                        <td>Kiên Giang</td>
+                    </tr>
+                    <tr>
+                        <th>74</th>
+                        <td>Duy Phương</td>
+                        <td>18 Phạm Hồng Thái, phường 10, thành phố Đà Lạt</td>
+                        <td>2633588588</td>
+                        <td>Lâm Đồng</td>
+                    </tr>
+                    <tr>
+                        <th>75</th>
+                        <td>An Khoa</td>
+                        <td>34 Lê Thị Pha, P1, TP Bảo Lộc, Lâm Đồng</td>
+                        <td>2633710235</td>
+                        <td>Lâm Đồng</td>
+                    </tr>
+                    <tr>
+                        <th>76</th>
+                        <td>Điện Lạnh Tuyên Vũ</td>
+                        <td>723 Quốc Lộ 20, Liên Nghĩa, Đức Trọng, Lâm Đồng</td>
+                        <td>918675358</td>
+                        <td>Lâm Đồng</td>
+                    </tr>
+                    <tr>
+                        <th>77</th>
+                        <td>Hưng Võ Long An</td>
+                        <td>63 Hùng Vương P2, TP Tân An, Long An</td>
+                        <td>2723525911</td>
+                        <td>Long An</td>
+                    </tr>
+                    <tr>
+                        <th>78</th>
+                        <td>Minh Dũng</td>
+                        <td>27 Quốc Lộ 1A, P5, TP Tân An, Long An</td>
+                        <td>2723663678</td>
+                        <td>Long An</td>
+                    </tr>
+                    <tr>
+                        <th>79</th>
+                        <td>Quang Dũng</td>
+                        <td>161 Trần Phú, Phủ Hà, Phan Rang</td>
+                        <td>947907447</td>
+                        <td>Ninh Thuận</td>
+                    </tr>
+                    <tr>
+                        <th>80</th>
+                        <td>Hoàng Huy</td>
+                        <td>130 Trương Công Định, P2, TP.Sóc Trăng</td>
+                        <td>2993614888</td>
+                        <td>Sóc Trăng</td>
+                    </tr>
+                    <tr>
+                        <th>81</th>
+                        <td>Ngọc Bảo</td>
+                        <td>31 Phạm Ngũ Lão, Phường 01, TP Sóc Trăng</td>
+                        <td>2993610714</td>
+                        <td>Sóc Trăng</td>
+                    </tr>
+                    <tr>
+                        <th>82</th>
+                        <td>Nguyễn Phi Hổ</td>
+                        <td>QL22B, Ngã 4 Hiệp Trường, Hiệp Tân, Hòa Thành, Tây Ninh</td>
+                        <td>2763841897</td>
+                        <td>Tây Ninh</td>
+                    </tr>
+                    <tr>
+                        <th>83</th>
+                        <td>ĐL Tây Ninh</td>
+                        <td>QL22 An Bình , An Tịnh , Trảng Bàng , Tây Ninh</td>
+                        <td>945886442</td>
+                        <td>Tây Ninh</td>
+                    </tr>
+                    <tr>
+                        <th>84</th>
+                        <td>Đăng Huân</td>
+                        <td>34/1 Nguyễn Bỉnh Khiêm, P1, TP.Mỹ Tho, Tiền Giang</td>
+                        <td>2733874798</td>
+                        <td>Tiền Giang</td>
+                    </tr>
+                    <tr>
+                        <th>85</th>
+                        <td>Tân Hồng Phát</td>
+                        <td>35 Hùng Vương, Khóm 1, P3, TP Trà Vinh, Tỉnh Trà Vinh</td>
+                        <td>2943855211</td>
+                        <td>Trà Vinh</td>
+                    </tr>
+                    <tr>
+                        <th>86</th>
+                        <td>Long Hải</td>
+                        <td>39/2B Trần Phú, P4, TP Vĩnh Long, Tỉnh Vĩnh Long</td>
+                        <td>2703830126</td>
+                        <td>Vĩnh Long</td>
+                    </tr>
+                    <tr>
+                        <th>87</th>
+                        <td>Hân Quang Trí</td>
+                        <td>66. Đường 2/9,P Bình Hiên, Q Hải Châu, TP Đà Nẵng</td>
+                        <td>2363519999</td>
+                        <td>Đà Nẳng</td>
+                    </tr>
+                    <tr>
+                        <th>88</th>
+                        <td>Đông An Việt</td>
+                        <td>497 Điện Biên Phủ, P Hòa Khê, Quận Thanh Khê, Đà Nẵng</td>
+                        <td>2363649868</td>
+                        <td>Đà Nẳng</td>
+                    </tr>
+                    <tr>
+                        <th>89</th>
+                        <td>Phong Thành</td>
+                        <td>197 Nguyễn Khuyến, P Tân Lợi, Đak Lăk</td>
+                        <td>2623952917</td>
+                        <td>Đak Lak</td>
+                    </tr>
+                    <tr>
+                        <th>90</th>
+                        <td>Phong Thành</td>
+                        <td>Tổ 6, P Nghĩa Phú, TX Gia Nghĩa, Dak Nông</td>
+                        <td>2613546195</td>
+                        <td>Đăk Nông</td>
+                    </tr>
+                    <tr>
+                        <th>91</th>
+                        <td>Hùng Dũng</td>
+                        <td>33 Nguyễn Trường Tộ, TP Pleiku, Gia Lai</td>
+                        <td>2692240962</td>
+                        <td>Gia Lai</td>
+                    </tr>
+                    <tr>
+                        <th>92</th>
+                        <td>Luật Bình</td>
+                        <td>Tiểu Khu 2, Khu Phố 3, P Sông Trí, TX Kỳ Anh, Hà Tĩnh</td>
+                        <td>2393864978</td>
+                        <td>Hà Tĩnh</td>
+                    </tr>
+                    <tr>
+                        <th>93</th>
+                        <td>Hải Đăng</td>
+                        <td>Ql 1A, Khối 13, Tổ Dân Phố 9, TT Thạch Hà, Tỉnh Hà Tĩnh</td>
+                        <td>2396556665</td>
+                        <td>Hà Tĩnh</td>
+                    </tr>
+                    <tr>
+                        <th>94</th>
+                        <td>Thành Hiệp</td>
+                        <td>59 Xuân 68, P Thuận Thành, TP Huế</td>
+                        <td>2343531014</td>
+                        <td>Huế</td>
+                    </tr>
+                    <tr>
+                        <th>95</th>
+                        <td>Hoàng Minh</td>
+                        <td>2 Bà Triệu, Phường Sài , Nha Trang , Khánh Hoà</td>
+                        <td>2583563375</td>
+                        <td>Khánh Hòa</td>
+                    </tr>
+                    <tr>
+                        <th>96</th>
+                        <td>Điện Lạnh Danh</td>
+                        <td>215 Phan Chu Trinh, TP Kontum, Tỉnh Kon Tum</td>
+                        <td>2603861171</td>
+                        <td>Kontum</td>
+                    </tr>
+                    <tr>
+                        <th>97</th>
+                        <td>Minh Đức</td>
+                        <td>37 Lê Thánh Tôn, P Lê Lợi, TP Quy Nhơn, Bình Định</td>
+                        <td>2563814157</td>
+                        <td>Bình Định</td>
+                    </tr>
+                    <tr>
+                        <th>98</th>
+                        <td>Gởi Dương</td>
+                        <td>45A Trần Quý Cáp, P3, TP Tuy Hoà</td>
+                        <td>2383830034</td>
+                        <td>Phú Yên</td>
+                    </tr>
+                    <tr>
+                        <th>99</th>
+                        <td>Quang Trang</td>
+                        <td>126A Lý Thường Kiệt, TP Đồng Hới, Quảng Bình</td>
+                        <td>2323822570</td>
+                        <td>Quảng Bình</td>
+                    </tr>
+                    <tr>
+                        <th>100</th>
+                        <td>Đại Chúng</td>
+                        <td>418. Phan Chu Trinh, P An Xuân, TP Tam Kỳ, Quảng Nam</td>
+                        <td>2353851675</td>
+                        <td>Quảng Nam</td>
+                    </tr>
+                    <tr>
+                        <th>101</th>
+                        <td>Quang Thành</td>
+                        <td>45 Quang Trung, P. Lê Hồng Phong, TP Quảng Ngãi</td>
+                        <td>2553828569</td>
+                        <td>Quảng Ngãi</td>
+                    </tr>
+                    <tr>
+                        <th>102</th>
+                        <td>Quang Lợi</td>
+                        <td>Thôn 3 , Xã Đức Nhuận , Huyện Mộ Đức , Quảng Ngãi.</td>
+                        <td>2553848629</td>
+                        <td>Quảng Ngãi</td>
+                    </tr>
+                    <tr>
+                        <th>103</th>
+                        <td>Bảo Thiên</td>
+                        <td>32 Nguyễn Trãi, TP. Đông Hà , Quảng Trị</td>
+                        <td>2333553636</td>
+                        <td>Quảng Trị</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <section class="mi-footer">
+        <div class="container">
+            <h1 class="mi-company-name">CÔNG TY TNHH MD CONSUMER ELECTRIC APPLIANCE VIỆT NAM</h1>
+            <div class="row d-flex justify-content-center text-right">
+                <div class="col-md-3">
+                    <p style="margin-bottom: 0;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Địa chỉ: Số 24-26, Đường B4, Phường An
+                    </p>
+                    <p style="padding-left: 10px;">Lợi Đông, Quận 2, Thành phố Hồ Chí Minh</p>
+                </div>
+                <div class="col-md-3"><p><i class="fa fa-file"></i>MST: 0315794959</p></div>
+                <div class="col-md-3"><p><i class="fa fa-phone"></i>1800 588 863</p></div>
+                <div class="col-md-3"><p><i class="fa fa-envelope-o"></i>customer.care@midea.com</p></div>
+            </div>
+            <div class="mi-line"></div>
+            <div class="mi-copy-right">Copyright &copy; 2021, <a href="https://icheck.vn/" target="_blank">iCheck </a>all rights reserved.</div>
+        </div>
+    </section>
+</footer>
+</body>
+<script>
+    $(document).ready( function () {
+        $('#midea_address').DataTable({
+            //searching: false,
+            ordering:  false,
+            pageLength: 15,
+        });
+    } );
+</script>
+</html>
